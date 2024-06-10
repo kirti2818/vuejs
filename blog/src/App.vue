@@ -10,7 +10,8 @@
     <!-- <GetValueInput/> -->
     <!-- <GetCheckboxAndRadioValue/> -->
     <!-- <IfElseCondition/> -->
-    <ForLoop/>
+    <!-- <ForLoop/> -->
+    <ParentComponent/>
   </div>
 </template>
 
@@ -24,7 +25,8 @@
 // import GetValueInput from './components/GetValueInput.vue'
 // import GetCheckboxAndRadioValue from './components/GetCheckboxAndRadioValue.vue'
 // import IfElseCondition from './components/IfElseCondition.vue'
-import ForLoop from './components/ForLoop.vue'
+// import ForLoop from './components/ForLoop.vue'
+import ParentComponent from './components/ParentComponent.vue'
 
 
 export default {
@@ -39,7 +41,8 @@ export default {
     // GetValueInput,
     // GetCheckboxAndRadioValue,
     // IfElseCondition,
-    ForLoop
+    // ForLoop,
+    ParentComponent,
   
   }
 }
