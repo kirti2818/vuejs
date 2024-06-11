@@ -11,7 +11,13 @@
     <!-- <GetCheckboxAndRadioValue/> -->
     <!-- <IfElseCondition/> -->
     <!-- <ForLoop/> -->
-    <ParentComponent/>
+    <!-- <ParentComponent/> -->
+    <!-- <HtmlBinding/> -->
+    <!-- <TeacherComponent :name = "Teachername"/>
+    <StudentComponent :name = "Studentname"/> -->
+    <!-- <PropsParentComponent/> -->
+    <!-- <RefUse/> -->
+    <FormWithValidation/>
   </div>
 </template>
 
@@ -26,7 +32,13 @@
 // import GetCheckboxAndRadioValue from './components/GetCheckboxAndRadioValue.vue'
 // import IfElseCondition from './components/IfElseCondition.vue'
 // import ForLoop from './components/ForLoop.vue'
-import ParentComponent from './components/ParentComponent.vue'
+// import ParentComponent from './components/ParentComponent.vue'
+// import HtmlBinding from './components/HtmlBinding.vue'
+// import StudentComponent from './components/PropsPassing/StudentComponent.vue'
+// import TeacherComponent from './components/PropsPassing/TeacherComponent.vue'
+// import PropsParentComponent from './components/PropsChildToParent/ParentComponent.vue'
+// import RefUse from './components/RefUse.vue'
+import FormWithValidation from './components/FormWithValidation.vue'
 
 
 export default {
@@ -42,8 +54,21 @@ export default {
     // GetCheckboxAndRadioValue,
     // IfElseCondition,
     // ForLoop,
-    ParentComponent,
+    // ParentComponent,
+    // HtmlBinding,
+    // StudentComponent,
+    // TeacherComponent,
+    // PropsParentComponent,
+    // RefUse,
+    FormWithValidation
+    
   
+  },
+  data(){
+    return{
+      Teachername : "Kirti Gupta",
+      Studentname : "John"
+    }
   }
 }
 </script>

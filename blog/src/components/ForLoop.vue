@@ -2,10 +2,10 @@
 <div>
     <h1>For Loop</h1>
     <ul>
-        <l1 v-for="item in users" :key="item.name">
+        <li v-for="item in users" v-bind:key="item.name">
             name is : {{ item.name }} , age is : {{ item.age }}
 
-        </l1>
+        </li>
     </ul>
 </div>
 </template>
