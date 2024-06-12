@@ -17,7 +17,12 @@
     <StudentComponent :name = "Studentname"/> -->
     <!-- <PropsParentComponent/> -->
     <!-- <RefUse/> -->
-    <FormWithValidation/>
+    <!-- <FormWithValidation/> -->
+    <!-- <FormModifiers/> -->
+    <!-- <ParentComp/> -->
+    <!-- <ComputedProperty/> -->
+    <!-- <WatchersProperty/> -->
+    <ParentComponent/>
   </div>
 </template>
 
@@ -38,7 +43,12 @@
 // import TeacherComponent from './components/PropsPassing/TeacherComponent.vue'
 // import PropsParentComponent from './components/PropsChildToParent/ParentComponent.vue'
 // import RefUse from './components/RefUse.vue'
-import FormWithValidation from './components/FormWithValidation.vue'
+// import FormWithValidation from './components/FormWithValidation.vue'
+// import FormModifiers from './components/FormModifiers.vue'
+// import ParentComp from './components/NonPropsData/ParentComp.vue'
+// import ComputedProperty from './components/ComputedProperty.vue'
+// import WatchersProperty from './components/WatchersProperty.vue'
+import ParentComponent from './components/slots/ParentComponent.vue'
 
 
 export default {
@@ -60,7 +70,12 @@ export default {
     // TeacherComponent,
     // PropsParentComponent,
     // RefUse,
-    FormWithValidation
+    // FormWithValidation,
+    // FormModifiers,
+    // ParentComp,
+    // ComputedProperty,
+    // WatchersProperty,
+    ParentComponent
     
   
   },
