@@ -1,8 +1,28 @@
 <template>
 <div>
     <h1>Parent Component</h1>
-  <ChildComponent><h1>Kirti Gupta</h1></ChildComponent>
-  <ChildComponent><h2>Age is 21</h2></ChildComponent>
+  <ChildComponent>
+    <template v-slot:header>
+        <h1 >Kirti Gupta</h1>
+    </template>
+    <template v-slot:content>
+       <button>Buy Now</button>
+    </template>
+    <template v-slot:footer>
+       <h2>Age is 21</h2>
+    </template>
+  </ChildComponent>
+  <ChildComponent>
+    <template v-slot:header>
+        <h1 >Sakshi Gupta</h1>
+    </template>
+    <template v-slot:content>
+       <button>Buy Now</button>
+    </template>
+    <template v-slot:footer>
+       <h2>Age is 22</h2>
+    </template>
+  </ChildComponent>
   <ChildComponent></ChildComponent>
 </div>
 </template>
