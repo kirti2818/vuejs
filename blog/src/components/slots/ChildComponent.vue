@@ -11,6 +11,7 @@
         <footer>
             <slot name="footer"><button>Click me</button></slot>
         </footer>
+        <button v-on:click="gg">send</button>
        
 
     </div>
@@ -20,7 +21,15 @@
     export default {
         name : "ChildComponent",
         props:{
-            name : String
+            name : String,
+            isbtndisabled : Boolean,
+            update: Function
+        },
+        methods:{
+            gg(){
+                console.log("hii") 
+                this.update(!this.isbtndisabled)       
+            }
         }
       
     }
